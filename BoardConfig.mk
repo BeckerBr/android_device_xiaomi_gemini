@@ -182,6 +182,7 @@ BOARD_PERIODIC_CHORES_INTERVAL_SLOW := -1
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
+TARGET_USES_QCOM_BSP := true
 BOARD_USES_QC_TIME_SERVICES := true
 #PRODUCT_BOOT_JARS += tcmclient com.qti.dpmframework dpmapi com.qti.location.sdk
 
