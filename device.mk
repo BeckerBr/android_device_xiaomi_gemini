@@ -36,7 +36,7 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # HWUI overrides
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
+$(call inherit-product, vendor/omni/config/phone-xxhdpi-2048-hwui-memory.mk)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -250,12 +250,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
-
-# OTA Updates
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ota.romname=AOSP-GEMINI-OREO \
-    ro.ota.version=$(shell date -u +%Y%m%d) \
-    ro.ota.manifest=https://romhut.com/roms/aosp-gemini-oreo/ota.xml
 
 # QMI
 PRODUCT_PACKAGES += \
