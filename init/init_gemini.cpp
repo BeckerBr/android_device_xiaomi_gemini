@@ -31,13 +31,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/sysinfo.h>
+#include <android-base/logging.h>
 
 #include <android-base/properties.h>
 
 #include "property_service.h"
-#include "vendor_init.h"
 
 using android::base::GetProperty;
+
+namespace android {
+namespace init {
 
 char const *heapminfree;
 char const *heapmaxfree;
@@ -76,3 +79,5 @@ void vendor_load_properties()
     android::init::property_set("dalvik.vm.heapminfree", heapminfree);
     android::init::property_set("dalvik.vm.heapmaxfree", heapmaxfree);
 }
+}  // namespace init
+}  // namespace android
