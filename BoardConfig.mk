@@ -232,3 +232,9 @@ ALLOW_MISSING_DEPENDENCIES := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/gemini/BoardConfigVendor.mk
+
+#Omni Target
+TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
+TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
+TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
+TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8996
