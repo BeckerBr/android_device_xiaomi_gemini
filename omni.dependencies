@@ -41,12 +41,6 @@
     "revision": "android-8.0"
   },
   {
-    "remote": "github",
-    "repository": "platform_kernel_xiaomi_msm8996",
-    "target_path": "kernel/xiaomi/msm8996",
-    "revision": "aosp-8.1"
-  },
-  {
     "remote": "omnirom",
     "repository": "android_vendor_qcom_opensource_interfaces",
     "target_path": "vendor/qcom/opensource/interfaces",
